@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;800&family=Caprasimo&family=Gloock&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(1, 22, 30);
+  color: #fff;
+}
+
 html {
   font-size: 16px;
+  font-family: "Albert Sans", sans-serif;
 }
 
 button,
@@ -30,6 +37,7 @@ ion-icon {
   font-size: 0.9rem;
   cursor: pointer;
   font-weight: 600;
+  opacity: 0.8;
 }
 .nav .menu li:hover {
   transition: color 0.2s ease;
@@ -76,6 +84,7 @@ ion-icon {
 .nav .rest .email span {
   font-size: 0.95rem;
   font-weight: 600;
+  opacity: 0.8;
 }
 .nav .rest .email span:hover {
   transition: color 0.2s ease;
@@ -103,10 +112,16 @@ ion-icon {
 }
 
 .home {
-  padding-block: 3.5rem;
+  padding-block: 1.5rem;
 }
 .home #span {
-  transform: rotate();
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 1rem;
+  opacity: 0.7;
 }
 .home .content {
   margin-inline-end: 3rem;
@@ -117,7 +132,6 @@ ion-icon {
 }
 .home .content .top .left {
   width: 50%;
-  border: 1px solid red;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -131,15 +145,19 @@ ion-icon {
   padding: 0.4rem 1rem;
   border: 1.5px solid rgb(56, 179, 56);
   background: none;
+  color: #fff;
+}
+.home .content .top .left button ion-icon {
+  transform: rotate(315deg);
 }
 .home .content .top .left button:hover {
   transition: all 0.2s ease;
-  padding: 0.5rem 1.1rem;
+  color: rgb(122, 229, 130);
 }
 .home .content .top .right {
   width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .home .content .top .right .about_image {
   align-self: flex-end;
@@ -151,20 +169,57 @@ ion-icon {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home .content #hero__image {
-  width: 100%;
-  max-height: 60dvh;
-  -o-object-fit: cover;
-     object-fit: cover;
+.home .content .top .right .sticker {
+  display: flex;
+  justify-content: space-between;
 }
-.home .content .sponsors {
-  padding: 1.5rem;
+.home .content .top .right .sticker .ring {
+  align-self: flex-start;
+  width: 12rem;
+  height: 12rem;
+  border: 2rem solid rgb(1, 22, 30);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.4rem;
+  position: relative;
+  background-color: rgb(122, 229, 130);
 }
-.home .content .sponsors:hover {
+.home .content .top .right .sticker .ring span {
+  color: rgb(1, 22, 30);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transform: rotate(90deg);
+}
+.home .content .top .right .sticker ion-icon {
+  align-self: flex-end;
+  font-size: 8rem;
+  color: rgb(122, 229, 130);
+  transform: rotate(40deg);
+  opacity: 0.8;
+}
+.home .content #hero__image {
+  width: 95%;
+  max-height: 60dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-inline: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .content .sponsors {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.home .content .sponsors img {
+  width: 4rem;
+  height: 4rem;
+}
+.home .content .sponsors img:hover {
   color: rgb(56, 179, 56);
   transition: color 0.2s ease;
 }
@@ -191,10 +246,14 @@ ion-icon {
 }
 .icon .button {
   width: 10rem;
-  height: 2rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border: none;
   border-radius: 5px;
-  background: navajowhite;
+  background: rgb(1, 1, 34);
 }
 .icon .button:hover {
   background: rgb(56, 179, 56);
@@ -214,43 +273,69 @@ ion-icon {
 }
 
 .what_we_do {
+  padding: 3.5rem 3rem 0 3rem;
+  margin-block: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 3rem;
+  height: 90dvh;
 }
 .what_we_do .left {
   align-self: flex-start;
+  width: 40vw;
 }
 .what_we_do .left .title {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding-block-end: 1rem;
+  width: 100%;
+  gap: 0.3rem;
+  margin-block-end: 1rem;
 }
 .what_we_do .left .title img {
-  width: 1rem;
-  height: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 1.4rem;
+  height: 1.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.what_we_do .left .title h4 {
+.what_we_do .left .title h3 {
   font-weight: 600;
+  font-size: 0.9rem;
   opacity: 0.7;
 }
 .what_we_do .left h2 {
   font-size: 2.5rem;
-  margin-block-end: 4rem;
+  margin-block-end: 7rem;
+  font-family: "Gloock", serif;
 }
-.what_we_do .left button {
+.what_we_do .left .bott {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+.what_we_do .left .bott button {
   border: none;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   font-weight: 600;
   opacity: 0.7;
+  background: none;
+  color: #fff;
+  align-self: flex-start;
 }
-.what_we_do .left img {
-  width: 5rem;
-  height: 5rem;
+.what_we_do .left .bott button ion-icon {
+  transform: rotate(315deg);
+}
+.what_we_do .left .bott button:hover {
+  color: rgb(122, 229, 130);
+  transition: color 0.2s ease;
+}
+.what_we_do .left .bott #circle {
+  align-self: flex-end;
+  z-index: 99;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   margin-inline-end: -4rem;
 }
@@ -258,6 +343,67 @@ ion-icon {
   align-self: flex-end;
 }
 .what_we_do .middle img {
-  max-height: 70%;
+  max-height: 60dvh;
   width: 30dvw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.what_we_do .right {
+  width: 50vw;
+  align-self: flex-end;
+}
+.what_we_do .right p {
+  width: 60%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding-block-end: 1.4rem;
+  opacity: 0.7;
+}
+.what_we_do .right .buttons {
+  padding-block-start: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bttn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.bttn button {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  background: rgb(1, 1, 34);
+  border-radius: 15px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.bttn button span {
+  color: rgb(122, 229, 130);
+}
+.bttn button:hover {
+  background: rgb(122, 229, 130);
+  transition: all 0.2s ease;
+  color: rgb(1, 22, 30);
+}
+.bttn button:hover span {
+  color: rgb(1, 22, 30);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(1, 1, 34);
+  border-radius: 5px;
+  color: #fff;
+}
+.btn:hover {
+  background: rgb(122, 229, 130);
+  transition: all 0.2s ease;
+  color: rgb(1, 22, 30);
 }/*# sourceMappingURL=app.css.map */

@@ -2,7 +2,7 @@ import logo from '../images/icons/letter-e.png'
 import circle from '../images/annie-spratt-MChSQHxGZrQ-unsplash.jpg';
 import midImage from '../images/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg';
 import { IonIcon } from "@ionic/react";
-import { callOutline } from "ionicons/icons";
+import { arrowForward, callOutline } from "ionicons/icons";
 
 
 const About = () => {
@@ -12,11 +12,13 @@ const About = () => {
                 <div className="left">
                     <div className="title">
                         <img src={logo} alt="logo" />
-                        <h4>about company</h4>
+                        <h3>about company</h3>
                     </div>
                     <h2>We DO Work Smart Digital Agency</h2>
-                    <button><span>More</span>About Us</button>
-                    <img src={circle} alt="circle" />
+                    <div className="bott">
+                        <button><span>More <IonIcon icon={arrowForward} /></span> About Us</button>
+                        <img id='circle' src={circle} alt="circle" />
+                    </div>
                 </div>
                 <div className="middle">
                     <img src={midImage} alt="mid" />
@@ -48,7 +50,9 @@ const About = () => {
                 </div>
                 
         </div>
-        <button><IonIcon icon={callOutline} /> Customer Emergency Contact Number - <span>+2541234567</span></button>
+        <div className="bttn">
+            <button><IonIcon icon={callOutline} /> Customer Emergency Contact Number - <span>+2541234567</span></button>
+        </div>
         </div>
      );
 }

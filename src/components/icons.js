@@ -29,13 +29,13 @@ const Icons = () => {
  
 export default Icons;
 
-function Icon ({props}) {
-    let url, button;
+function Icon ({url, button}) {
+    
     return(
         <div className="icon">
             <img src={url} alt="icons" />
             <div className="button">{button}</div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eius quae itaque illum maxime sint alias eum omnis maiores nemo </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eius quae itaque. </p>
         </div>
     );
 }
