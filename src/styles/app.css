@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+button,
+ion-icon {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.nav .menu {
+  justify-self: flex-start;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.nav .menu li {
+  list-style: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.nav .menu li:hover {
+  transition: color 0.2s ease;
+  color: rgb(56, 179, 56);
+}
+.nav .rest {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+}
+.nav .rest .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+.nav .rest .logo img {
+  height: 2rem;
+  width: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.nav .rest .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.nav .rest .social li {
+  list-style: none;
+}
+.nav .rest .social li:hover {
+  transition: color 0.2s ease;
+  color: rgb(56, 179, 56);
+}
+.nav .rest .email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.nav .rest .email span {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.nav .rest .email span:hover {
+  transition: color 0.2s ease;
+  color: rgb(56, 179, 56);
+}
+.nav .rest .email ion-icon {
+  font-size: 1rem;
+  color: rgb(56, 179, 56);
+}
+.nav .rest .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+.nav .rest .dots li {
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.nav .rest .dots:hover {
+  color: rgb(56, 179, 56);
+  transition: all 0.2s ease;
+}
+
+.home {
+  padding-block: 3.5rem;
+}
+.home #span {
+  transform: rotate();
+}
+.home .content {
+  margin-inline-end: 3rem;
+}
+.home .content .top {
+  display: flex;
+  align-items: center;
+}
+.home .content .top .left {
+  width: 50%;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.home .content .top .left h4 {
+  font-size: 3.5rem;
+}
+.home .content .top .left button {
+  margin-block: 1rem;
+  padding: 0.4rem 1rem;
+  border: 1.5px solid rgb(56, 179, 56);
+  background: none;
+}
+.home .content .top .left button:hover {
+  transition: all 0.2s ease;
+  padding: 0.5rem 1.1rem;
+}
+.home .content .top .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content .top .right .about_image {
+  align-self: flex-end;
+}
+.home .content .top .right .about_image img {
+  width: 4rem;
+  height: 10rem;
+  border-radius: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .content #hero__image {
+  width: 100%;
+  max-height: 60dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .content .sponsors {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+.home .content .sponsors:hover {
+  color: rgb(56, 179, 56);
+  transition: color 0.2s ease;
+}
+
+.icon {
+  width: 12rem;
+  height: 18rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.icon:hover {
+  border: 1px solid rgb(56, 179, 56);
+  transition: border 0.2s ease-in;
+}
+.icon img {
+  height: 4rem;
+  width: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.icon .button {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  background: navajowhite;
+}
+.icon .button:hover {
+  background: rgb(56, 179, 56);
+  transition: background 0.2s ease;
+}
+.icon p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.what_we_do {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.what_we_do .left {
+  align-self: flex-start;
+}
+.what_we_do .left .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-block-end: 1rem;
+}
+.what_we_do .left .title img {
+  width: 1rem;
+  height: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.what_we_do .left .title h4 {
+  font-weight: 600;
+  opacity: 0.7;
+}
+.what_we_do .left h2 {
+  font-size: 2.5rem;
+  margin-block-end: 4rem;
+}
+.what_we_do .left button {
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.what_we_do .left img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-inline-end: -4rem;
+}
+.what_we_do .middle {
+  align-self: flex-end;
+}
+.what_we_do .middle img {
+  max-height: 70%;
+  width: 30dvw;
+}/*# sourceMappingURL=app.css.map */
