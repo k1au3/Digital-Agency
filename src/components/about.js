@@ -17,11 +17,11 @@ const About = () => {
                     <h2>We DO Work Smart Digital Agency</h2>
                     <div className="bott">
                         <button><span>More <IonIcon icon={arrowForward} /></span> About Us</button>
-                        <img id='circle' src={circle} alt="circle" />
+                        <img id='circle' src={circle} alt="circle" loading='lazy' />
                     </div>
                 </div>
                 <div className="middle">
-                    <img src={midImage} alt="mid" />
+                    <img src={midImage} alt="mid" loading='lazy'/>
                     
                 </div>
                 <div className="right">

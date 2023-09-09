@@ -31,7 +31,7 @@ const Hero = () => {
                         </div>                      
                     </div>
                 </div>
-                <img id="hero__image" src={heroImage} alt="hero" />
+                <img id="hero__image" src={heroImage} alt="hero" loading='lazy'/>
                 <div className="sponsors">
                     <img src={google} alt="sponsor" />
                     <img src={PS} alt="sponsor" />

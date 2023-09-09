@@ -13,11 +13,17 @@ body {
 html {
   font-size: 16px;
   font-family: "Albert Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 button,
 ion-icon {
   cursor: pointer;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nav {
@@ -197,6 +203,7 @@ ion-icon {
   color: rgb(122, 229, 130);
   transform: rotate(40deg);
   opacity: 0.8;
+  border-radius: 7px 7px 0 7px;
 }
 .home .content #hero__image {
   width: 95%;
@@ -233,10 +240,12 @@ ion-icon {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  border: none;
 }
 .icon:hover {
   border: 1px solid rgb(56, 179, 56);
   transition: border 0.2s ease-in;
+  transform: scale(1.01);
 }
 .icon img {
   height: 4rem;
@@ -254,6 +263,7 @@ ion-icon {
   border: none;
   border-radius: 5px;
   background: rgb(1, 1, 34);
+  cursor: pointer;
 }
 .icon .button:hover {
   background: rgb(56, 179, 56);
@@ -263,6 +273,7 @@ ion-icon {
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
+  opacity: 0.6;
 }
 
 .icons {
@@ -273,7 +284,7 @@ ion-icon {
 }
 
 .what_we_do {
-  padding: 3.5rem 3rem 0 3rem;
+  padding: 3.5rem 5rem 0 5rem;
   margin-block: 1.5rem;
   display: flex;
   justify-content: center;
@@ -406,4 +417,396 @@ ion-icon {
   background: rgb(122, 229, 130);
   transition: all 0.2s ease;
   color: rgb(1, 22, 30);
+}
+
+.service {
+  padding: 3.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.service .left {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+}
+.service .left .title {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.3rem;
+}
+.service .left .title img {
+  width: 1.4rem;
+  height: 1.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.service .left .title h3 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.service .left h3 {
+  padding-block: 0.5rem;
+}
+.service .left p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.service .left .icon_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.service .right {
+  width: 30%;
+  position: relative;
+}
+.service .right #large {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.service .right #logo {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  right: -2rem;
+  top: 3.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: rgb(1, 22, 30);
+}
+
+.iconn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem;
+}
+.iconn img {
+  width: 3rem;
+  height: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.iconn .cont h4 {
+  font-size: 0.9rem;
+  padding-block-end: 0.8rem;
+}
+.iconn .cont p {
+  opacity: 0.6;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.iconn h6 {
+  margin-inline-start: 0.6rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: rgb(1, 1, 34);
+  color: #fff;
+  padding: 0.3rem;
+}
+.iconn:hover h6 {
+  color: rgb(1, 22, 30);
+  background: rgb(122, 229, 130);
+  transition: all 0.3s ease;
+}
+
+.pricing {
+  width: 100%;
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pricing .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-block-end: 1rem;
+}
+.pricing .title img {
+  width: 1.4rem;
+  height: 1.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pricing .title h4 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.pricing h3 {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Gloock", serif;
+  font-size: 2rem;
+  padding-block-end: 1.5rem;
+}
+.pricing h3 span {
+  font-size: 1.5rem;
+}
+.pricing .pricing_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.pricing .svg {
+  width: 100%;
+  margin-block-start: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-inline-end: 8rem;
+}
+.pricing .svg ion-icon {
+  font-size: 7rem;
+  transform: rotate(45deg);
+  color: rgb(122, 229, 130);
+  border-radius: 10px;
+}
+
+.pricing_card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  width: 17%;
+  height: 27rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background: rgb(3, 32, 44);
+}
+.pricing_card:hover {
+  transform: scale(1.02);
+  border: 1px solid rgb(122, 229, 130);
+  transition: all 0.3s ease;
+}
+.pricing_card .price {
+  display: flex;
+  flex-direction: column;
+}
+.pricing_card .price h4 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pricing_card .price h4 span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgb(122, 229, 130);
+}
+.pricing_card .price h5 {
+  padding-block-start: 0.4rem;
+  opacity: 0.8;
+}
+.pricing_card .dash {
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(122, 229, 130);
+  margin-block: 1rem;
+}
+.pricing_card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.pricing_card ul li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  list-style: none;
+  opacity: 0.7;
+}
+.pricing_card ul li ion-icon {
+  color: rgb(122, 229, 130);
+  padding-inline-end: 0.4rem;
+}
+.pricing_card .button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-block: 0.8rem;
+  height: 100%;
+}
+.pricing_card .button button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  background: none;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+.pricing_card .button button ion-icon {
+  transform: rotate(135deg);
+}
+.pricing_card .button button:hover {
+  transition: all 0.3s ease;
+  background: rgb(122, 229, 130);
+  color: rgb(1, 22, 30);
+}
+
+.team {
+  padding-inline: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 18rem;
+}
+.team .cont {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+.team .cont .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-block-end: 1rem;
+}
+.team .cont .title img {
+  width: 1.4rem;
+  height: 1.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.team .cont .title h4 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.team .cont h3 {
+  padding-block-end: 1rem;
+  font-size: 1.3rem;
+}
+.team .cont p {
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.team .cont .nav-btn {
+  padding-block: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.team .cont .nav-btn ion-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.team .cont .nav-btn ion-icon:hover {
+  color: rgb(122, 229, 130);
+  transition: all 0.3s ease;
+}
+
+.member {
+  width: 20%;
+  border: 1px solid rebeccapurple;
+  height: 100%;
+  position: relative;
+}
+.member img {
+  width: 100%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.member h4 {
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.member .popup {
+  display: none;
+}
+.member:hover .popuup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-inline-start: 1rem;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 16rem;
+  transform: scaleY(100);
+  transition: all 0.3s ease;
+}
+.member:hover .popuup .role {
+  padding: 0.6rem 1rem;
+  background: rgb(122, 229, 130);
+  color: rgb(1, 22, 30);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.member:hover .popuup .socials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.6rem;
+  align-items: flex-end;
+}
+.member:hover .popuup .socials img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.star {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.star .left {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin-inline-start: 5rem;
+  justify-content: space-between;
+  padding-block-end: 1.5rem;
+}
+.star .left ion-icon {
+  color: rgb(122, 229, 130);
+}
+.star .left :nth-child(1) {
+  margin-block-start: -5rem;
+  font-size: 7rem;
+  z-index: -99;
+  align-self: flex-start;
+}
+.star .left :nth-child(2) {
+  align-self: flex-end;
+  font-size: 2.5rem;
+}
+.star .right {
+  width: 40%;
+  padding-inline-end: 3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.star .right ion-icon {
+  font-size: 2.5rem;
+  color: rgb(122, 229, 130);
 }/*# sourceMappingURL=app.css.map */
